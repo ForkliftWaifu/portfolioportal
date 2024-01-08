@@ -1,11 +1,15 @@
 * {
     box-sizing: border-box;
     margin: 0px;
+    font-size: calc(0.66vh + 0.34vw);
 }
 
 header {
-    height: 15vh;
+    height: 20vh;
     border: 1px solid red;
+    display: grid;
+    grid-template-rows: 5fr 3fr;
+    justify-content: space-evenly;
 }
 
 #title-text {
@@ -15,20 +19,28 @@ header {
 h1 {
     text-align: center;
     color: blue;
-    font-size: 6vh;
+    font-size: 6rem;
+    margin: 0.5rem;
+    width: 100%;
 }
 nav {
     display: flex;
     justify-content: space-evenly;
-    font-size: 3vh;
+    align-self: end;
+    width: 100%;
+}
+
+nav a {
+    font-size: 3rem;
+    margin: 0.5rem;
 }
 
 main {
     display: grid;
     grid-template: 
                 "x y" auto / 2fr 3fr;
-    height: 75vh;
-    gap: 1vw;
+    height: 70vh;
+    gap: 1rem;
 }
 
 #information {
@@ -38,7 +50,7 @@ main {
 
 #information h2 {
     text-align: center;
-    font-size: 5vh;
+    font-size: 4rem;
     text-decoration: underline;
 }
 
@@ -58,12 +70,12 @@ footer {
 
 footer h3 {
     display: inline-block;
-    font-size: 4vh;
+    font-size: 3rem;
 }
 
 footer p {
     display: inline-block;
-    font-size: 2vh;
+    font-size: 1.5rem;
     position: relative;
     top: 0.5vh;
     margin-left: 1vh;
