@@ -2,7 +2,7 @@ let overview = document.getElementById("overview");
 let information = document.getElementById("information");
 let quoteGenerator = document.getElementById("quote-generator");
 let img = document.getElementById("portfolioimg");
-let resetInformation = document.getElementById('information').innerHTML
+let resetInformation = document.getElementById('information').innerHTML;
 let resetImg = document.getElementById("portfolioimg").src;
 let currentPage = 0;
 let sample1 = document.getElementById('sample1');
@@ -40,12 +40,17 @@ quoteGenerator.addEventListener('click', function() {
     information.innerHTML = 
     `<h2>Quote Generator</h2>
     <br>
-    <p>Hello</p>`;
+    <p>Quote Generator is a project that had me create a simple JavaScript program and
+    keep tracks of its project using Git and Github. I decided to create random quotes from
+    the Dao De Jing and alter their content and attribution slightly to produce some funny results.</p>
+    <br>
+    <br>
+    <p> You can access the github for this project <a href="https://github.com/ForkliftWaifu/quote-generator">here</a>.</p>`
     img.src = './Images/qout.jpg';
 
 })
 
 overview.addEventListener('click', function() {
-    information.innerHTML = resetinformation;
-    img.src = resetimg;
+    information.innerHTML = resetInformation;
+    img.src = resetImg;
 })
