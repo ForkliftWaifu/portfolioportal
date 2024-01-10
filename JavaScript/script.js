@@ -41,7 +41,7 @@ quoteGenerator.addEventListener('click', function() {
     `<h2>Quote Generator</h2>
     <br>
     <p>Quote Generator is a project that had me create a simple JavaScript program and
-    keep tracks of its project using Git and Github. I decided to create random quotes from
+    keep tracks of its progress using Git and Github. I decided to use quotes from
     the Dao De Jing and alter their content and attribution slightly to produce some funny results.</p>
     <br>
     <br>
