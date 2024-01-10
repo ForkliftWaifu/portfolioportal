@@ -6,7 +6,8 @@
 
 header {
     height: 20vh;
-    border: 0.5rem solid blue;
+    border-top: 0.5rem solid blue;
+    border-bottom: 0.5rem solid blue;
     display: grid;
     grid-template-rows: 5fr 3fr;
     justify-content: space-evenly;
@@ -96,7 +97,8 @@ main {
 
 footer {
     height: 10vh;
-    border: 0.5rem solid blue;
+    border-top: 0.5rem solid blue;
+    border-bottom: 0.5rem solid blue;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -109,13 +111,13 @@ footer h3 {
 
 footer p {
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 2rem;
     position: relative;
     top: 0.5vh;
     margin-left: 1vh;
 }
 footer a {
-    font-size: 1.5rem; 
+    font-size: 2rem; 
 }
 
 #portfolioimg {
@@ -134,13 +136,9 @@ footer a {
                     "y" 1fr;
     }
     footer p {
-        font-size: 2rem;
         margin-right: 1rem;
     }
-    footer a {
-        font-size: 2rem;
-    }
-    footer h3 {
+   footer h3 {
         margin-left:1rem;
     }
 }
@@ -151,4 +149,38 @@ footer a {
                     "x" 1fr
                     "y" 1fr ;
     }
+}
+
+@media only screen and (max-height: 600px) {
+    * {
+        font-size: calc(1.33 * (0.34vh + 0.66vw));
+    }
+    main {
+        grid-template:
+                    "x";
+        height: 60vh
+    }
+    #glamour {
+        display: none
+    }
+    #information h2 {
+        font-size: 4rem;
+    }
+    #information p {
+        font-size: 2.5rem;
+    }
+    #information a {
+        font-size: 2.5rem;
+    }
+    footer p {
+        margin-right: 1rem;
+    }
+    footer h3 {
+        margin-left:1rem;
+    }
+    footer {
+        height: 20vh;
+    }
+
+
 }

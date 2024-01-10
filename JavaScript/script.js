@@ -45,7 +45,7 @@ quoteGenerator.addEventListener('click', function() {
     the Dao De Jing and alter their content and attribution slightly to produce some funny results.</p>
     <br>
     <br>
-    <p> You can access the github for this project <a href="https://github.com/ForkliftWaifu/quote-generator">here</a>.</p>`
+    <p> You can access the github for this project <a href="https://github.com/ForkliftWaifu/quote-generator" target="_blank">here</a>.</p>`
     img.src = './Images/qout.jpg';
 
 })
