@@ -6,7 +6,7 @@
 
 header {
     height: 20vh;
-    border: 1px solid red;
+    border: 0.5rem solid blue;
     display: grid;
     grid-template-rows: 5fr 3fr;
     justify-content: space-evenly;
@@ -28,24 +28,42 @@ nav {
     justify-content: space-evenly;
     align-self: end;
     width: 100%;
+    padding-bottom: 1rem;
 }
 
-nav a {
+nav button {
     font-size: 3rem;
     margin: 0.5rem;
+    color: blue;
+    border: 1px solid blue;
+    background-color: darkgrey;
+}
+
+nav button:hover {
+    background-color: grey;
+    cursor: pointer;
+
+}
+
+#nav-previous {
+    display:none;
+}
+
+#sample1, #sample2 {
+    display: none;
 }
 
 main {
     display: grid;
     grid-template: 
-                "x y" auto / 2fr 3fr;
+                "x y" 70vh / 2fr 3fr;
     height: 70vh;
     gap: 1rem;
 }
 
 #information {
     grid-area: x;
-    margin: 10px 10px;
+    margin: 2rem 2rem;
 }
 
 #information h2 {
@@ -54,15 +72,31 @@ main {
     text-decoration: underline;
 }
 
+#information p {
+    margin-left: 1rem;
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+#information a {
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+
 #glamour {
     grid-area: y;
     margin: 10px 10px;
-    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    min-width: 0;
+    min-height: 0;
 }
 
 footer {
     height: 10vh;
-    border: 1px solid red;
+    border: 0.5rem solid blue;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -79,4 +113,42 @@ footer p {
     position: relative;
     top: 0.5vh;
     margin-left: 1vh;
+}
+footer a {
+    font-size: 1.5rem; 
+}
+
+#portfolioimg {
+    object-fit: scale-down;
+    width: 100%;
+    max-height: 100%;
+}
+
+@media only screen and (orientation:portrait) {
+    * {
+        font-size: calc(1.33 * (0.34vh + 0.66vw));
+    }
+    main {
+        grid-template:
+                    "x" 1fr
+                    "y" 1fr;
+    }
+    footer p {
+        font-size: 2rem;
+        margin-right: 1rem;
+    }
+    footer a {
+        font-size: 2rem;
+    }
+    footer h3 {
+        margin-left:1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        grid-template:
+                    "x" 1fr
+                    "y" 1fr ;
+    }
 }
